@@ -1,0 +1,69 @@
+/* AI.Super Agent v3.0 — 设计令牌
+   暖色系对标 Claude Desktop；light / dark 双主题，全部通过 CSS 变量切换。 */
+:root {
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --sidebar-w: 264px;
+  /* v3.3 统一内容栅格：消息区 / 上下文条 / 附件区 / 输入框共用同一宽度与内边距 */
+  --content-w: 840px;
+  --content-pad: 26px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .06);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, .12);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, .22);
+}
+
+html[data-theme="light"] {
+  --bg: #faf9f5;
+  --sidebar: #f0eee6;
+  --surface: #ffffff;
+  --surface-2: #f5f3ed;
+  --hover: #e9e6dc;
+  --border: #e3e0d6;
+  --border-strong: #d3cfc2;
+  --text: #2b2a27;
+  --text-soft: #6c6960;
+  --text-faint: #96928a;
+  --accent: #d97757;
+  --accent-hover: #c66547;
+  --accent-soft: #f6e9e2;
+  --accent-text: #ffffff;
+  --user-bubble: #f0eee6;
+  --code-bg: #f5f4ee;
+  --code-border: #e6e3d9;
+  --ok: #4a8f5b;
+  --warn: #b8860b;
+  --err: #c0483d;
+  --overlay: rgba(30, 28, 24, .38);
+  --scroll: #d8d4c8;
+}
+
+html[data-theme="dark"] {
+  --bg: #262624;
+  --sidebar: #1f1f1d;
+  --surface: #2e2e2b;
+  --surface-2: #34342f;
+  --hover: #3a3934;
+  --border: #3d3d38;
+  --border-strong: #4c4b45;
+  --text: #f2f0e9;
+  --text-soft: #aaa79d;
+  --text-faint: #7e7b72;
+  --accent: #d97757;
+  --accent-hover: #e0896b;
+  --accent-soft: #42332c;
+  --accent-text: #ffffff;
+  --user-bubble: #34342f;
+  --code-bg: #1b1b19;
+  --code-border: #3a3934;
+  --ok: #76b98a;
+  --warn: #d8aa54;
+  --err: #e0796d;
+  --overlay: rgba(0, 0, 0, .58);
+  --scroll: #4a4943;
+}
